@@ -50,17 +50,17 @@ window.onload = function() {
 
     // loading images 
     birdImg = new Image();
-    birdImg.src = "/images/flappybird.gif";
+    birdImg.src = "./images/flappybird.gif";
     birdImg.onload = function () {
         context.drawImage(birdImg, bird.x, bird.y, bird.width, bird.height);
     }
 
 
     topPipeImg = new Image();
-    topPipeImg.src = "/images/toppipe.png";
+    topPipeImg.src = "./images/toppipe.png";
 
     bottomPipeImg = new Image();
-    bottomPipeImg.src = "/images/bottompipe.png";
+    bottomPipeImg.src = "./images/bottompipe.png";
 
     
     document.addEventListener("keydown" , moveBird);
